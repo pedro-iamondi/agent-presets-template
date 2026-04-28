@@ -32,7 +32,7 @@ Examples:
 
 ## Installed Skills
 
-Local skills live in `.agent-skills/` and were selected from the Tech Leads Club Agent Skills catalog.
+Local skills live in `.agent-skills/` and were selected from the Tech Leads Club Agent Skills catalog. When an upstream skill includes supporting files such as `references/`, `scripts/`, `rules/`, or `assets/`, those files should be kept with the local copy so the skill can run as intended.
 
 - accessibility
 - best-practices

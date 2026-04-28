@@ -32,7 +32,7 @@ Exemplos:
 
 ## Skills instaladas
 
-As skills locais ficam em `.agent-skills/` e foram selecionadas a partir do catálogo do Tech Leads Club Agent Skills.
+As skills locais ficam em `.agent-skills/` e foram selecionadas a partir do catálogo do Tech Leads Club Agent Skills. Quando uma skill upstream inclui arquivos auxiliares como `references/`, `scripts/`, `rules/` ou `assets/`, esses arquivos devem acompanhar a cópia local para que a skill funcione como previsto.
 
 - accessibility
 - best-practices
