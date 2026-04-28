@@ -6,14 +6,16 @@ Operational instructions for development agents in this project.
 
 This project was created by Pedro H. Iamondi.
 
-- LinkedIn: https://www.linkedin.com/in/pedro-henrique-iamondi
-- Instagram: https://www.instagram.com/peh.iamondi/
+- [Pedro H. Iamondi on LinkedIn](https://www.linkedin.com/in/pedro-henrique-iamondi)
+- [Pedro H. Iamondi on Instagram](https://www.instagram.com/peh.iamondi/)
 
 ## Goal
 
-Standardize how agents work across company projects, reducing rework, hallucinations, inconsistent decisions, and unnecessary token usage.
+Standardize how agents work across company projects. Use this template to
+reduce rework, hallucinations, inconsistent decisions, and unnecessary token
+usage.
 
-## Main Rule
+## Main rule
 
 Before executing any task, the agent must:
 
@@ -21,11 +23,12 @@ Before executing any task, the agent must:
 2. Identify the task type.
 3. Load only the required preset from `.agent-presets/`.
 4. Inspect the real code before suggesting or changing files.
-5. Avoid loading documents, specs, or skills that are not relevant to the current task.
+5. Avoid loading documents, specs, or skills that are not relevant to the task.
 
-## Path Convention
+## Path convention
 
-All paths mentioned in this template are relative to the root of the project where the template was installed, unless explicitly stated otherwise.
+All paths mentioned in this template are relative to the root of the project
+where the template was installed, unless explicitly stated otherwise.
 
 Examples:
 
@@ -33,7 +36,7 @@ Examples:
 - `.agent-skills/seo/SKILL.md`
 - `scratch/`
 
-## Available Presets
+## Available presets
 
 - Next.js landing page: `.agent-presets/landing-page.md`
 - Next.js blog: `.agent-presets/blog.md`
@@ -42,7 +45,7 @@ Examples:
 - Release audit: `.agent-presets/audit-release.md`
 - Common base: `.agent-presets/base.md`
 
-## When to Use SDD
+## SDD usage
 
 Use full SDD only for:
 
@@ -50,7 +53,8 @@ Use full SDD only for:
 - New features outside the original scope.
 - Structural or architectural changes.
 - Changes that impact multiple areas of the system.
-- Changes with risk around data, authentication, payments, permissions, public SEO, or critical performance.
+- Changes with risk around data, authentication, payments, permissions,
+  public SEO, or critical performance.
 
 Do not use full SDD for:
 
@@ -69,36 +73,52 @@ For small tasks, use quick mode:
 4. Validate.
 5. Record a lesson only if the issue is recurring or relevant.
 
-## Skills Based on Tech Leads Club Agent Skills
+## Tech Leads Club skills
 
-Main repository:
+These presets use skills based on Tech Leads Club Agent Skills:
 
-- https://github.com/tech-leads-club/agent-skills
-- https://tech-leads-club.github.io/agent-skills/
+- [Tech Leads Club Agent Skills repository](https://github.com/tech-leads-club/agent-skills)
+- [Tech Leads Club Agent Skills site](https://tech-leads-club.github.io/agent-skills/)
 
 Core skills used by these presets:
 
-- [tlc-spec-driven](.agent-skills/tlc-spec-driven/SKILL.md) ([web](https://agent-skills.techleads.club/skills/tlc-spec-driven/))
-- [seo](.agent-skills/seo/SKILL.md) ([web](https://agent-skills.techleads.club/skills/seo/))
-- [best-practices](.agent-skills/best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/best-practices/))
-- [core-web-vitals](.agent-skills/core-web-vitals/SKILL.md) ([web](https://agent-skills.techleads.club/skills/core-web-vitals/))
-- [technical-design-doc-creator](.agent-skills/technical-design-doc-creator/SKILL.md) ([web](https://agent-skills.techleads.club/skills/technical-design-doc-creator/))
-- [frontend-design](.agent-skills/frontend-design/SKILL.md) ([web](https://agent-skills.techleads.club/skills/frontend-design/))
+- [tlc-spec-driven local skill](.agent-skills/tlc-spec-driven/SKILL.md)
+  ([tlc-spec-driven web reference](https://agent-skills.techleads.club/skills/tlc-spec-driven/))
+- [seo local skill](.agent-skills/seo/SKILL.md)
+  ([seo web reference](https://agent-skills.techleads.club/skills/seo/))
+- [best-practices local skill](.agent-skills/best-practices/SKILL.md)
+  ([best-practices web reference](https://agent-skills.techleads.club/skills/best-practices/))
+- [core-web-vitals local skill](.agent-skills/core-web-vitals/SKILL.md)
+  ([core-web-vitals web reference](https://agent-skills.techleads.club/skills/core-web-vitals/))
+- [technical-design-doc-creator local skill](.agent-skills/technical-design-doc-creator/SKILL.md)
+  ([technical-design-doc-creator web reference](https://agent-skills.techleads.club/skills/technical-design-doc-creator/))
+- [frontend-design local skill](.agent-skills/frontend-design/SKILL.md)
+  ([frontend-design web reference](https://agent-skills.techleads.club/skills/frontend-design/))
 
 Recommended skills to install together:
 
-- [security-best-practices](.agent-skills/security-best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/security-best-practices/))
-- [accessibility](.agent-skills/accessibility/SKILL.md) ([web](https://agent-skills.techleads.club/skills/accessibility/))
-- [react-best-practices](.agent-skills/react-best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/react-best-practices/))
-- [playwright-skill](.agent-skills/playwright-skill/SKILL.md) ([web](https://agent-skills.techleads.club/skills/playwright-skill/))
-- [web-quality-audit](.agent-skills/web-quality-audit/SKILL.md) ([web](https://agent-skills.techleads.club/skills/web-quality-audit/))
-- [perf-lighthouse](.agent-skills/perf-lighthouse/SKILL.md) ([web](https://agent-skills.techleads.club/skills/perf-lighthouse/))
-- [codenavi](.agent-skills/codenavi/SKILL.md) ([web](https://agent-skills.techleads.club/skills/codenavi/))
-- [mermaid-studio](.agent-skills/mermaid-studio/SKILL.md) ([web](https://agent-skills.techleads.club/skills/mermaid-studio/))
-- [docs-writer](.agent-skills/docs-writer/SKILL.md) ([web](https://agent-skills.techleads.club/skills/docs-writer/))
-- [coding-guidelines](.agent-skills/coding-guidelines/SKILL.md) ([web](https://agent-skills.techleads.club/skills/coding-guidelines/))
+- [security-best-practices local skill](.agent-skills/security-best-practices/SKILL.md)
+  ([security-best-practices web reference](https://agent-skills.techleads.club/skills/security-best-practices/))
+- [accessibility local skill](.agent-skills/accessibility/SKILL.md)
+  ([accessibility web reference](https://agent-skills.techleads.club/skills/accessibility/))
+- [react-best-practices local skill](.agent-skills/react-best-practices/SKILL.md)
+  ([react-best-practices web reference](https://agent-skills.techleads.club/skills/react-best-practices/))
+- [playwright-skill local skill](.agent-skills/playwright-skill/SKILL.md)
+  ([playwright-skill web reference](https://agent-skills.techleads.club/skills/playwright-skill/))
+- [web-quality-audit local skill](.agent-skills/web-quality-audit/SKILL.md)
+  ([web-quality-audit web reference](https://agent-skills.techleads.club/skills/web-quality-audit/))
+- [perf-lighthouse local skill](.agent-skills/perf-lighthouse/SKILL.md)
+  ([perf-lighthouse web reference](https://agent-skills.techleads.club/skills/perf-lighthouse/))
+- [codenavi local skill](.agent-skills/codenavi/SKILL.md)
+  ([codenavi web reference](https://agent-skills.techleads.club/skills/codenavi/))
+- [mermaid-studio local skill](.agent-skills/mermaid-studio/SKILL.md)
+  ([mermaid-studio web reference](https://agent-skills.techleads.club/skills/mermaid-studio/))
+- [docs-writer local skill](.agent-skills/docs-writer/SKILL.md)
+  ([docs-writer web reference](https://agent-skills.techleads.club/skills/docs-writer/))
+- [coding-guidelines local skill](.agent-skills/coding-guidelines/SKILL.md)
+  ([coding-guidelines web reference](https://agent-skills.techleads.club/skills/coding-guidelines/))
 
-## Token-Saving Strategy
+## Token-saving strategy
 
 - Always load `base.md`.
 - Load only one task-specific preset.
@@ -109,7 +129,7 @@ Recommended skills to install together:
 - Prefer targeted inspection of real files.
 - Avoid repeating the full content of existing files in chat.
 
-## Instruction Priority
+## Instruction priority
 
 When instructions conflict, follow this order:
 
@@ -120,7 +140,7 @@ When instructions conflict, follow this order:
 5. Project documentation.
 6. Conventions inferred from code.
 
-## Anti-Hallucination Rule
+## Anti-hallucination rule
 
 Never invent:
 
@@ -133,11 +153,13 @@ Never invent:
 - Business rules.
 - Product decisions.
 
-If there is no evidence in the project, state the uncertainty and propose verification.
+If there is no evidence in the project, state the uncertainty and propose
+verification.
 
-## Lessons Learned
+## Lessons learned
 
-When an error is fixed and is likely to happen again, suggest recording it in a project memory file, for example:
+When an error is fixed and is likely to happen again, suggest recording it in a
+project memory file, for example:
 
 - `.agent-memory/known-errors.md`
 - `.agent-memory/lessons-learned.md`
@@ -156,17 +178,17 @@ What was being done.
 ### Error
 What happened.
 
-### Root Cause
+### Root cause
 Why it happened.
 
-### How to Avoid
+### How to avoid
 Practical checklist to prevent repetition.
 
-### Rule for Agents
+### Rule for agents
 Short reusable instruction.
 ```
 
-## Task Completion
+## Task completion
 
 When finishing, respond objectively with:
 

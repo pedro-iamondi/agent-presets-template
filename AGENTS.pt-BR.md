@@ -6,12 +6,14 @@ Instruções operacionais para agentes de desenvolvimento neste projeto.
 
 Este projeto foi elaborado por Pedro H. Iamondi.
 
-- LinkedIn: https://www.linkedin.com/in/pedro-henrique-iamondi
-- Instagram: https://www.instagram.com/peh.iamondi/
+- [Pedro H. Iamondi no LinkedIn](https://www.linkedin.com/in/pedro-henrique-iamondi)
+- [Pedro H. Iamondi no Instagram](https://www.instagram.com/peh.iamondi/)
 
 ## Objetivo
 
-Padronizar como agentes trabalham em projetos da empresa, reduzindo retrabalho, alucinações, decisões inconsistentes e consumo desnecessário de tokens.
+Padronizar como agentes trabalham em projetos da empresa. Use este template
+para reduzir retrabalho, alucinações, decisões inconsistentes e consumo
+desnecessário de tokens.
 
 ## Regra principal
 
@@ -21,11 +23,13 @@ Antes de executar qualquer tarefa, o agente deve:
 2. Identificar o tipo de tarefa.
 3. Carregar apenas o preset necessário em `.agent-presets/`.
 4. Inspecionar o código real antes de sugerir ou alterar arquivos.
-5. Evitar carregar documentos, specs ou skills que não sejam relevantes para a tarefa atual.
+5. Evitar carregar documentos, specs ou skills que não sejam relevantes para a
+   tarefa.
 
 ## Convenção de caminhos
 
-Todos os caminhos citados neste template são relativos à raiz do projeto onde o template foi instalado, salvo quando indicado explicitamente.
+Todos os caminhos citados neste template são relativos à raiz do projeto onde o
+template foi instalado, salvo quando indicado explicitamente.
 
 Exemplos:
 
@@ -42,7 +46,7 @@ Exemplos:
 - Auditoria de release: `.agent-presets/audit-release.md`
 - Base comum: `.agent-presets/base.md`
 
-## Quando usar SDD
+## Uso de SDD
 
 Use SDD completo apenas para:
 
@@ -50,7 +54,8 @@ Use SDD completo apenas para:
 - Feature nova fora do escopo original.
 - Mudança estrutural ou arquitetural.
 - Alteração que impacta várias áreas do sistema.
-- Mudança com risco em dados, autenticação, pagamentos, permissões, SEO público ou performance crítica.
+- Mudança com risco em dados, autenticação, pagamentos, permissões, SEO público
+  ou performance crítica.
 
 Não use SDD completo para:
 
@@ -65,38 +70,54 @@ Para tarefas pequenas, use modo rápido:
 
 1. Entender o problema.
 2. Inspecionar arquivos relevantes.
-3. Aplicar menor mudança segura.
+3. Aplicar a menor mudança segura.
 4. Validar.
 5. Registrar aprendizado somente se o erro for recorrente ou relevante.
 
-## Skills baseadas no Tech Leads Club Agent Skills
+## Skills do Tech Leads Club
 
-Repositório principal:
+Estes presets usam skills baseadas no Tech Leads Club Agent Skills:
 
-- https://github.com/tech-leads-club/agent-skills
-- https://tech-leads-club.github.io/agent-skills/
+- [Repositório Tech Leads Club Agent Skills](https://github.com/tech-leads-club/agent-skills)
+- [Site Tech Leads Club Agent Skills](https://tech-leads-club.github.io/agent-skills/)
 
 Skills principais usadas por estes presets:
 
-- [tlc-spec-driven](.agent-skills/tlc-spec-driven/SKILL.md) ([web](https://agent-skills.techleads.club/skills/tlc-spec-driven/))
-- [seo](.agent-skills/seo/SKILL.md) ([web](https://agent-skills.techleads.club/skills/seo/))
-- [best-practices](.agent-skills/best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/best-practices/))
-- [core-web-vitals](.agent-skills/core-web-vitals/SKILL.md) ([web](https://agent-skills.techleads.club/skills/core-web-vitals/))
-- [technical-design-doc-creator](.agent-skills/technical-design-doc-creator/SKILL.md) ([web](https://agent-skills.techleads.club/skills/technical-design-doc-creator/))
-- [frontend-design](.agent-skills/frontend-design/SKILL.md) ([web](https://agent-skills.techleads.club/skills/frontend-design/))
+- [Skill local tlc-spec-driven](.agent-skills/tlc-spec-driven/SKILL.md)
+  ([referência web tlc-spec-driven](https://agent-skills.techleads.club/skills/tlc-spec-driven/))
+- [Skill local seo](.agent-skills/seo/SKILL.md)
+  ([referência web seo](https://agent-skills.techleads.club/skills/seo/))
+- [Skill local best-practices](.agent-skills/best-practices/SKILL.md)
+  ([referência web best-practices](https://agent-skills.techleads.club/skills/best-practices/))
+- [Skill local core-web-vitals](.agent-skills/core-web-vitals/SKILL.md)
+  ([referência web core-web-vitals](https://agent-skills.techleads.club/skills/core-web-vitals/))
+- [Skill local technical-design-doc-creator](.agent-skills/technical-design-doc-creator/SKILL.md)
+  ([referência web technical-design-doc-creator](https://agent-skills.techleads.club/skills/technical-design-doc-creator/))
+- [Skill local frontend-design](.agent-skills/frontend-design/SKILL.md)
+  ([referência web frontend-design](https://agent-skills.techleads.club/skills/frontend-design/))
 
 Skills recomendadas para instalar junto:
 
-- [security-best-practices](.agent-skills/security-best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/security-best-practices/))
-- [accessibility](.agent-skills/accessibility/SKILL.md) ([web](https://agent-skills.techleads.club/skills/accessibility/))
-- [react-best-practices](.agent-skills/react-best-practices/SKILL.md) ([web](https://agent-skills.techleads.club/skills/react-best-practices/))
-- [playwright-skill](.agent-skills/playwright-skill/SKILL.md) ([web](https://agent-skills.techleads.club/skills/playwright-skill/))
-- [web-quality-audit](.agent-skills/web-quality-audit/SKILL.md) ([web](https://agent-skills.techleads.club/skills/web-quality-audit/))
-- [perf-lighthouse](.agent-skills/perf-lighthouse/SKILL.md) ([web](https://agent-skills.techleads.club/skills/perf-lighthouse/))
-- [codenavi](.agent-skills/codenavi/SKILL.md) ([web](https://agent-skills.techleads.club/skills/codenavi/))
-- [mermaid-studio](.agent-skills/mermaid-studio/SKILL.md) ([web](https://agent-skills.techleads.club/skills/mermaid-studio/))
-- [docs-writer](.agent-skills/docs-writer/SKILL.md) ([web](https://agent-skills.techleads.club/skills/docs-writer/))
-- [coding-guidelines](.agent-skills/coding-guidelines/SKILL.md) ([web](https://agent-skills.techleads.club/skills/coding-guidelines/))
+- [Skill local security-best-practices](.agent-skills/security-best-practices/SKILL.md)
+  ([referência web security-best-practices](https://agent-skills.techleads.club/skills/security-best-practices/))
+- [Skill local accessibility](.agent-skills/accessibility/SKILL.md)
+  ([referência web accessibility](https://agent-skills.techleads.club/skills/accessibility/))
+- [Skill local react-best-practices](.agent-skills/react-best-practices/SKILL.md)
+  ([referência web react-best-practices](https://agent-skills.techleads.club/skills/react-best-practices/))
+- [Skill local playwright-skill](.agent-skills/playwright-skill/SKILL.md)
+  ([referência web playwright-skill](https://agent-skills.techleads.club/skills/playwright-skill/))
+- [Skill local web-quality-audit](.agent-skills/web-quality-audit/SKILL.md)
+  ([referência web web-quality-audit](https://agent-skills.techleads.club/skills/web-quality-audit/))
+- [Skill local perf-lighthouse](.agent-skills/perf-lighthouse/SKILL.md)
+  ([referência web perf-lighthouse](https://agent-skills.techleads.club/skills/perf-lighthouse/))
+- [Skill local codenavi](.agent-skills/codenavi/SKILL.md)
+  ([referência web codenavi](https://agent-skills.techleads.club/skills/codenavi/))
+- [Skill local mermaid-studio](.agent-skills/mermaid-studio/SKILL.md)
+  ([referência web mermaid-studio](https://agent-skills.techleads.club/skills/mermaid-studio/))
+- [Skill local docs-writer](.agent-skills/docs-writer/SKILL.md)
+  ([referência web docs-writer](https://agent-skills.techleads.club/skills/docs-writer/))
+- [Skill local coding-guidelines](.agent-skills/coding-guidelines/SKILL.md)
+  ([referência web coding-guidelines](https://agent-skills.techleads.club/skills/coding-guidelines/))
 
 ## Estratégia para poupar tokens
 
@@ -109,7 +130,7 @@ Skills recomendadas para instalar junto:
 - Preferir inspeção pontual de arquivos reais.
 - Evitar repetir no chat o conteúdo integral de arquivos já existentes.
 
-## Ordem de prioridade das instruções
+## Prioridade das instruções
 
 Quando houver conflito, seguir esta ordem:
 
@@ -137,7 +158,8 @@ Se não encontrar evidência no projeto, declarar incerteza e propor verificaç�
 
 ## Registro de aprendizados
 
-Quando um erro for corrigido e for provável que aconteça novamente, sugerir registrar em um arquivo de memória do projeto, por exemplo:
+Quando um erro for corrigido e for provável que aconteça novamente, sugerir o
+registro em um arquivo de memória do projeto, por exemplo:
 
 - `.agent-memory/known-errors.md`
 - `.agent-memory/lessons-learned.md`
@@ -148,7 +170,7 @@ Não registrar todo erro pequeno. Registrar apenas padrões reutilizáveis.
 Modelo recomendado:
 
 ```md
-## YYYY-MM-DD — título curto
+## YYYY-MM-DD - título curto
 
 ### Contexto
 O que estava sendo feito.

@@ -1,18 +1,20 @@
-# Agent Presets Template Manifest
+# Manifesto do Agent Presets Template
 
 ## Identidade
 
 - Nome: Agent Presets Template
 - Versão: 0.1.0
-- Data de referência: 2026-04-28
-- Objetivo: padronizar como agentes de IA trabalham em projetos da empresa usando presets, skills locais e carregamento progressivo de contexto.
+- Data de referência: 28 de abril de 2026
+- Objetivo: Padronizar como agentes de IA trabalham em projetos da empresa
+  usando presets, skills locais e carregamento progressivo de contexto.
 - Autor: Pedro H. Iamondi
-- LinkedIn: https://www.linkedin.com/in/pedro-henrique-iamondi
-- Instagram: https://www.instagram.com/peh.iamondi/
+- LinkedIn: [Pedro H. Iamondi no LinkedIn](https://www.linkedin.com/in/pedro-henrique-iamondi)
+- Instagram: [Pedro H. Iamondi no Instagram](https://www.instagram.com/peh.iamondi/)
 
 ## Convenção de caminhos
 
-Todos os caminhos citados neste template são relativos à raiz do projeto onde o template foi instalado.
+Todos os caminhos citados neste template são relativos à raiz do projeto onde o
+template foi instalado.
 
 Exemplos:
 
@@ -32,7 +34,11 @@ Exemplos:
 
 ## Skills instaladas
 
-As skills locais ficam em `.agent-skills/` e foram selecionadas a partir do catálogo do Tech Leads Club Agent Skills. Quando uma skill upstream inclui arquivos auxiliares como `references/`, `scripts/`, `rules/` ou `assets/`, esses arquivos devem acompanhar a cópia local para que a skill funcione como previsto.
+As skills locais ficam em `.agent-skills/` e foram selecionadas a partir do
+catálogo do Tech Leads Club Agent Skills. Quando uma skill upstream inclui
+arquivos auxiliares como `references/`, `scripts/`, `rules/` ou `assets/`,
+mantenha esses arquivos junto da cópia local para que a skill funcione como
+previsto.
 
 - accessibility
 - best-practices
@@ -53,21 +59,25 @@ As skills locais ficam em `.agent-skills/` e foram selecionadas a partir do cat�
 
 ## Origem das skills
 
-- Repositório: https://github.com/tech-leads-club/agent-skills
-- Site: https://tech-leads-club.github.io/agent-skills/
-- Registry consultado: https://github.com/tech-leads-club/agent-skills/blob/main/packages/skills-catalog/skills-registry.json
+- [Repositório Tech Leads Club Agent Skills](https://github.com/tech-leads-club/agent-skills)
+- [Site Tech Leads Club Agent Skills](https://tech-leads-club.github.io/agent-skills/)
+- [Registry de skills consultado](https://github.com/tech-leads-club/agent-skills/blob/main/packages/skills-catalog/skills-registry.json)
 
 ## Regra de atualização
 
-1. Atualizar skills de forma intencional, preferencialmente em uma branch própria.
-2. Comparar mudanças relevantes com o registry upstream antes de substituir conteúdo local.
+1. Atualizar skills de forma intencional, preferencialmente em uma branch
+   própria.
+2. Comparar mudanças relevantes com o registry upstream antes de substituir
+   conteúdo local.
 3. Não editar skills copiadas sem registrar a decisão no histórico do projeto.
 4. Atualizar este manifesto quando presets, skills ou regras de uso mudarem.
 5. Validar links e caminhos após qualquer atualização.
 
 ## Sugestões futuras
 
-Não foram adicionadas novas skills além das já instaladas. Para evoluções futuras, avaliar skills de arquitetura e tooling do registry original apenas quando houver demanda real, por exemplo:
+Não foram adicionadas novas skills além das já instaladas. Para evoluções
+futuras, avaliar skills de arquitetura e tooling do registry original apenas
+quando houver demanda real, por exemplo:
 
 - coupling-analysis
 - modular-decomposition

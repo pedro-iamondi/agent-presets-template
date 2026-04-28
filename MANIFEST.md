@@ -1,18 +1,20 @@
-# Agent Presets Template Manifest
+# Agent Presets Template manifest
 
 ## Identity
 
 - Name: Agent Presets Template
 - Version: 0.1.0
-- Reference date: 2026-04-28
-- Goal: standardize how AI agents work in company projects using presets, local skills, and progressive context loading.
+- Reference date: April 28, 2026
+- Goal: Standardize how AI agents work in company projects using presets,
+  local skills, and progressive context loading.
 - Author: Pedro H. Iamondi
-- LinkedIn: https://www.linkedin.com/in/pedro-henrique-iamondi
-- Instagram: https://www.instagram.com/peh.iamondi/
+- LinkedIn: [Pedro H. Iamondi on LinkedIn](https://www.linkedin.com/in/pedro-henrique-iamondi)
+- Instagram: [Pedro H. Iamondi on Instagram](https://www.instagram.com/peh.iamondi/)
 
-## Path Convention
+## Path convention
 
-All paths mentioned in this template are relative to the root of the project where the template was installed.
+All paths mentioned in this template are relative to the root of the project
+where the template was installed.
 
 Examples:
 
@@ -21,7 +23,7 @@ Examples:
 - `.agent-skills/seo/SKILL.md`
 - `scratch/`
 
-## Installed Presets
+## Installed presets
 
 - Common base: `.agent-presets/base.md`
 - Next.js landing page: `.agent-presets/landing-page.md`
@@ -30,9 +32,12 @@ Examples:
 - General maintenance: `.agent-presets/maintenance.md`
 - Release audit: `.agent-presets/audit-release.md`
 
-## Installed Skills
+## Installed skills
 
-Local skills live in `.agent-skills/` and were selected from the Tech Leads Club Agent Skills catalog. When an upstream skill includes supporting files such as `references/`, `scripts/`, `rules/`, or `assets/`, those files should be kept with the local copy so the skill can run as intended.
+Local skills live in `.agent-skills/` and were selected from the Tech Leads
+Club Agent Skills catalog. When an upstream skill includes supporting files
+such as `references/`, `scripts/`, `rules/`, or `assets/`, keep those files
+with the local copy so the skill can run as intended.
 
 - accessibility
 - best-practices
@@ -51,23 +56,27 @@ Local skills live in `.agent-skills/` and were selected from the Tech Leads Club
 - tlc-spec-driven
 - web-quality-audit
 
-## Skill Sources
+## Skill sources
 
-- Repository: https://github.com/tech-leads-club/agent-skills
-- Site: https://tech-leads-club.github.io/agent-skills/
-- Registry consulted: https://github.com/tech-leads-club/agent-skills/blob/main/packages/skills-catalog/skills-registry.json
+- [Tech Leads Club Agent Skills repository](https://github.com/tech-leads-club/agent-skills)
+- [Tech Leads Club Agent Skills site](https://tech-leads-club.github.io/agent-skills/)
+- [Skills registry consulted](https://github.com/tech-leads-club/agent-skills/blob/main/packages/skills-catalog/skills-registry.json)
 
-## Update Rule
+## Update rule
 
 1. Update skills intentionally, preferably in a dedicated branch.
-2. Compare relevant changes with the upstream registry before replacing local content.
-3. Do not edit copied skills without recording the decision in the project history.
+2. Compare relevant changes with the upstream registry before replacing local
+   content.
+3. Do not edit copied skills without recording the decision in the project
+   history.
 4. Update this manifest whenever presets, skills, or usage rules change.
 5. Validate links and paths after any update.
 
-## Future Suggestions
+## Future suggestions
 
-No new skills were added beyond the ones already installed. For future iterations, evaluate architecture and tooling skills from the original registry only when there is real demand, for example:
+No new skills were added beyond the ones already installed. For future
+iterations, evaluate architecture and tooling skills from the original registry
+only when there is real demand, for example:
 
 - coupling-analysis
 - modular-decomposition
