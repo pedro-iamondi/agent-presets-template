@@ -118,6 +118,35 @@ Recommended skills to install together:
 - [coding-guidelines local skill](.agent-skills/coding-guidelines/SKILL.md)
   ([coding-guidelines web reference](https://agent-skills.techleads.club/skills/coding-guidelines/))
 
+## Convex skills
+
+Use Convex skills when a project uses Convex as the backend, database, or
+real-time data layer. Load only the Convex skill that matches the task.
+
+Source:
+
+- [Convex Agent Skills repository](https://github.com/get-convex/agent-skills)
+
+Installed Convex skills:
+
+- [convex local skill](.agent-skills/convex/SKILL.md): Route general Convex
+  work to the most specific Convex skill.
+- [convex-quickstart local skill](.agent-skills/convex-quickstart/SKILL.md):
+  Start a new Convex project or add Convex to an existing app.
+- [convex-setup-auth local skill](.agent-skills/convex-setup-auth/SKILL.md):
+  Set up authentication for a Convex app.
+- [convex-create-component local skill](.agent-skills/convex-create-component/SKILL.md):
+  Build a reusable Convex component with clear boundaries.
+- [convex-migration-helper local skill](.agent-skills/convex-migration-helper/SKILL.md):
+  Plan and run Convex migrations safely.
+- [convex-performance-audit local skill](.agent-skills/convex-performance-audit/SKILL.md):
+  Investigate Convex performance problems and bottlenecks.
+
+When a task touches Convex data, auth, migrations, production performance, or
+schema changes, treat it as at least `standard`. Use `full-sdd` when the change
+affects data modeling, permissions, production migrations, or multiple app
+areas.
+
 ## Token-saving strategy
 
 - Always load `base.md`.

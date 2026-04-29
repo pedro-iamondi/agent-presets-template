@@ -32,6 +32,9 @@ instructions for simple tasks.
   [Tech Leads Club Agent Skills](https://github.com/tech-leads-club/agent-skills).
   They are detailed manuals for engineering domains such as SEO,
   accessibility, security, React, and architecture.
+- `.agent-skills/convex*/`: Local copies of
+  [Convex Agent Skills](https://github.com/get-convex/agent-skills) for
+  projects that use Convex as the backend, database, or real-time data layer.
 - `scratch/`: Folder for disposable drafts, intermediate reports, and
   temporary agent outputs.
 - `README.pt-BR.md`: Portuguese copy of this README.
@@ -162,6 +165,13 @@ Example prompt:
 > Read `AGENTS.md`, load `.agent-presets/base.md` and
 > `.agent-presets/saas-react.md`. Add the "Phone" field to the user profile,
 > reusing existing patterns and handling loading, error, and success states.
+
+### Convex backend
+
+> Read `AGENTS.md`, load `.agent-presets/base.md`,
+> `.agent-presets/saas-react.md`, and the most specific Convex skill for the
+> task. Add Convex auth, inspect the existing schema and functions first, and
+> validate the generated Convex types before finishing.
 
 ### General maintenance
 

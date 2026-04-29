@@ -119,6 +119,36 @@ Skills recomendadas para instalar junto:
 - [Skill local coding-guidelines](.agent-skills/coding-guidelines/SKILL.md)
   ([referência web coding-guidelines](https://agent-skills.techleads.club/skills/coding-guidelines/))
 
+## Skills Convex
+
+Use as skills Convex quando um projeto usar Convex como backend, banco de dados
+ou camada de dados em tempo real. Carregue apenas a skill Convex que corresponde
+à tarefa.
+
+Origem:
+
+- [Repositório Convex Agent Skills](https://github.com/get-convex/agent-skills)
+
+Skills Convex instaladas:
+
+- [Skill local convex](.agent-skills/convex/SKILL.md): direciona trabalho
+  geral com Convex para a skill Convex mais específica.
+- [Skill local convex-quickstart](.agent-skills/convex-quickstart/SKILL.md):
+  inicia um projeto Convex novo ou adiciona Convex a um app existente.
+- [Skill local convex-setup-auth](.agent-skills/convex-setup-auth/SKILL.md):
+  configura autenticação em um app Convex.
+- [Skill local convex-create-component](.agent-skills/convex-create-component/SKILL.md):
+  cria um componente Convex reutilizável com limites claros.
+- [Skill local convex-migration-helper](.agent-skills/convex-migration-helper/SKILL.md):
+  planeja e executa migrações Convex com segurança.
+- [Skill local convex-performance-audit](.agent-skills/convex-performance-audit/SKILL.md):
+  investiga problemas e gargalos de performance em Convex.
+
+Quando a tarefa tocar dados Convex, autenticação, migrações, performance em
+produção ou mudanças de schema, trate como pelo menos `standard`. Use
+`full-sdd` quando a mudança afetar modelagem de dados, permissões, migrações em
+produção ou várias áreas do app.
+
 ## Estratégia para poupar tokens
 
 - Carregar `base.md` sempre.

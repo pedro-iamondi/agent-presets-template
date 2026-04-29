@@ -3,8 +3,8 @@
 ## Identity
 
 - Name: Agent Presets Template
-- Version: 0.1.0
-- Reference date: April 28, 2026
+- Version: 0.2.0
+- Reference date: April 29, 2026
 - Goal: Standardize how AI agents work in company projects using presets,
   local skills, and progressive context loading.
 - Author: Pedro H. Iamondi
@@ -56,11 +56,25 @@ with the local copy so the skill can run as intended.
 - tlc-spec-driven
 - web-quality-audit
 
+Convex skills for future projects:
+
+- convex
+- convex-create-component
+- convex-migration-helper
+- convex-performance-audit
+- convex-quickstart
+- convex-setup-auth
+
 ## Skill sources
 
 - [Tech Leads Club Agent Skills repository](https://github.com/tech-leads-club/agent-skills)
 - [Tech Leads Club Agent Skills site](https://tech-leads-club.github.io/agent-skills/)
 - [Skills registry consulted](https://github.com/tech-leads-club/agent-skills/blob/main/packages/skills-catalog/skills-registry.json)
+- [Convex Agent Skills repository](https://github.com/get-convex/agent-skills)
+
+The Convex skills include their supporting `agents/`, `assets/`, and
+`references/` files. The local copy also includes
+`.agent-skills/convex-THIRD_PARTY_NOTICES.md` for bundled third-party notices.
 
 ## Update rule
 

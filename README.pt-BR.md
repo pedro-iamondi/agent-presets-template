@@ -33,6 +33,10 @@ desnecessárias em tarefas simples.
   [Tech Leads Club Agent Skills](https://github.com/tech-leads-club/agent-skills).
   Elas são manuais detalhados para domínios de engenharia como SEO,
   acessibilidade, segurança, React e arquitetura.
+- `.agent-skills/convex*/`: Cópias locais das
+  [Convex Agent Skills](https://github.com/get-convex/agent-skills) para
+  projetos que usam Convex como backend, banco de dados ou camada de dados em
+  tempo real.
 - `scratch/`: Pasta para rascunhos descartáveis, relatórios intermediários e
   outputs temporários de agentes.
 - `README.pt-BR.md`: Cópia em português deste README.
@@ -166,6 +170,13 @@ Exemplo de prompt:
 > Leia `AGENTS.md`, carregue `.agent-presets/base.md` e
 > `.agent-presets/saas-react.md`. Adicione o campo "Telefone" no perfil do
 > usuário, reutilizando padrões existentes e tratando loading, erro e sucesso.
+
+### Backend Convex
+
+> Leia `AGENTS.md`, carregue `.agent-presets/base.md`,
+> `.agent-presets/saas-react.md` e a skill Convex mais específica para a
+> tarefa. Adicione autenticação com Convex, inspecione primeiro o schema e as
+> functions existentes e valide os tipos Convex gerados antes de finalizar.
 
 ### Manutenção geral
 
